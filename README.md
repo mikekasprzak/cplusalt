@@ -20,7 +20,7 @@ using namespace alt;
 int main( int argc, char* argv[] ) {
   Array<> myArray = { 10, 20, 30 };
   String text = "myArray has "+size(myArray)+u8" elements 😊";
-  printn(text);   // Variation of `alt::print` that appends a newline
+  printn(text);
 
   return 0;
 }
