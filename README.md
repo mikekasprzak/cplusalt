@@ -65,7 +65,8 @@ int main( int argc, char* argv[] ) {
 * Word operators, or implicit functions
   * i.e. `vec4 v = p1 cross p2;` for cross product (instead of `vec4 v = cross(p1, p2);`
 * Some sort of JSON-ish syntax that allows for hardcoding nested key-value pairs, _without_ having to pre-define a struct or class ahead of time.
-  * `auto Player = struct { .name = "Frankie", .age = 65 };`. Loosely based on C99/C++20 designated initializers.
+  * `auto Player = struct { .name = "Frankie", .age = 65 };`
+    * Loosely based on C99/C++20 designated initializers.
   * `alt::String getName( typeof(Player) thing ) { return alt::String(thing.name); }`
   * `alt::String template<class T> getName( T thing ) { return alt::String(thing.name); }`
   * No commonality between 2 classes with same members, but templated functions can be used to re-use logic.
