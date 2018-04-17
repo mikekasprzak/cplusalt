@@ -49,6 +49,6 @@ int main( int argc, char* argv[] ) {
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
 * Signal operations (smoothstep) as first class members of Math library
-* `Flex` type as default for all containers (i.e. `alt::Array<>` == `alt::array<Flex>`)
+* `Flex` type as default for all containers (i.e. `alt::Array<>` == `alt::Array<Flex>`)
 * JSON, XML parsing (core lib or addon?)
 * Networking (core lib or addon?)
