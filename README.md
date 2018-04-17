@@ -64,6 +64,8 @@ int main( int argc, char* argv[] ) {
 * `breakif` and `continueif` as language features, with the syntax variations above.
 * Word operators, or implicit functions
   * i.e. `vec4 v = p1 cross p2;` for cross product (instead of `vec4 v = cross(p1, p2);`
+* Some sort of JSON-ish syntax that allows for hardcoding nested key-value pairs, _without_ having to pre-define a struct or class ahead of time.
+  * i.e. `auto Player = { "name": "Frankie", "age": 65 };`.
 
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
