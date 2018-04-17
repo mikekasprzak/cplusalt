@@ -67,7 +67,7 @@ int main( int argc, char* argv[] ) {
 * Some sort of JSON-ish syntax that allows for hardcoding nested key-value pairs, _without_ having to pre-define a struct or class ahead of time.
   * i.e. `auto Player = { "name": "Frankie", "age": 65 };`.
   * You then write templated functions to operate on it.
-    * i.e. `String template<class T> getName( T thing ) { return thing.name; }`
+    * i.e. `alt::String template<class T> getName( T thing ) { return alt::String(thing.name); }`
 
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
