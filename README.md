@@ -36,7 +36,7 @@ int main( int argc, char* argv[] ) {
 int main( int argc, char* argv[] ) {
   alt::Array<int> myArray = { 10, 20, 30 };
   alt::String text = "myArray has " + alt::size(myArray) + u8" elements 😊. " + alt::length("dog");
-  alt::printn(text);            // Variation of `alt::print` that appends a newline
+  alt::printn(text);
   
   returnif(!myArray.size(), 1);
 
