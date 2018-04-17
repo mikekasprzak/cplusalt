@@ -36,15 +36,22 @@ int main( int argc, char* argv[] ) {
 int main( int argc, char* argv[] ) {
   alt::Array<int> myArray = { 10, 20, 30 };
   alt::String text = u8"myArray has "+myArray.size()+u8" elements 😊";
-  alt::printN(text);    // Variation of `alt::print` that appends a newline
+  alt::printN(text);            // Variation of `alt::print` that appends a newline
+  
+  returnif(!myArray.size(), 1);
 
   return 0;
 }
 ```
 
 
-## C++ Language Wishlist
+## C++ Language/Compiler Wishlist
 * Some way to set the default string format to UTF-8, without the `u8` string prefix.
+* `returnif` as a language feature instead of macro (because `void` returns are weird)
+  * `returnif(success);` returns value of `success` if condition `success` is true.
+  * `returnif(success, 1)` returns value of `1` if condition `success` is true.
+  * `returnif(success);` when return is void to return nothing (instead of having to use `returnifvoid(success);`.
+  * `returnif success;` syntax variation.
 
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
