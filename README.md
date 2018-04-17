@@ -53,6 +53,8 @@ int main( int argc, char* argv[] ) {
   * `returnif(success);` when return is void to return nothing (instead of having to use `returnifvoid(success);`.
   * `returnif success;` syntax variation.
   * `returnif (success);` syntax variation (i.e. macros require no space between `name` and `(`)
+* Word operators, or implicit functions
+  * i.e. `vec4 v = p1 cross p2;` for cross product (instead of `vec4 v = cross(p1, p2);`
 
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
