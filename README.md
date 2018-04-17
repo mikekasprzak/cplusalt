@@ -19,7 +19,7 @@ using namespace alt;
 
 int main( int argc, char* argv[] ) {
   Array<> myArray = { 10, 20, 30 };
-  String text = "myArray has " + size(myArray) + u8" elements 😊";
+  String text = "myArray has " + size(myArray) + u8" elements 😊. " + length("dog");
   printn(text);
 
   return 0;
@@ -35,7 +35,7 @@ int main( int argc, char* argv[] ) {
 
 int main( int argc, char* argv[] ) {
   alt::Array<int> myArray = { 10, 20, 30 };
-  alt::String text = "myArray has " + alt::size(myArray) + u8" elements 😊";
+  alt::String text = "myArray has " + alt::size(myArray) + u8" elements 😊. " + alt::length("dog");
   alt::printn(text);            // Variation of `alt::print` that appends a newline
   
   returnif(!myArray.size(), 1);
@@ -47,7 +47,8 @@ int main( int argc, char* argv[] ) {
 ### Details
 * `alt::print` prints a string
 * `alt::printn` prints a string, and appends a newline to the end of the string
-* `alt::size(val)` typicall invokes the `val.size()` method 
+* `alt::size(val)` typically invokes the `val.size()` method 
+* `alt::length(val)` typically invokes the `val.length()` method, or a UTF-8 friendly strlen.
 
 
 ## C++ Language/Compiler Wishlist
