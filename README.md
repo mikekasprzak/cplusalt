@@ -18,7 +18,7 @@ Work in progress
 using namespace alt;
 
 int main( int argc, char* argv[] ) {
-  Array<int> myArray = { 10, 20, 30 };
+  Array<> myArray = { 10, 20, 30 };
   String text = "myArray has "+myArray.size()+" elements";
   printN(text);   // Variation of `alt::print` that appends a newline
 
