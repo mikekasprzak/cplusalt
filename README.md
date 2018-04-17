@@ -20,7 +20,7 @@ using namespace alt;
 int main( int argc, char* argv[] ) {
   Array<> myArray = { 10, 20, 30 };
   String text = "myArray has "+myArray.size()+" elements";
-  printN(text);   // Variation of `alt::print` that appends a newline
+  printn(text);   // Variation of `alt::print` that appends a newline
 
   return 0;
 }
@@ -36,7 +36,7 @@ int main( int argc, char* argv[] ) {
 int main( int argc, char* argv[] ) {
   alt::Array<int> myArray = { 10, 20, 30 };
   alt::String text = u8"myArray has "+myArray.size()+u8" elements 😊";
-  alt::printN(text);            // Variation of `alt::print` that appends a newline
+  alt::printn(text);            // Variation of `alt::print` that appends a newline
   
   returnif(!myArray.size(), 1);
 
