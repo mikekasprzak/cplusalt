@@ -53,6 +53,7 @@ int main( int argc, char* argv[] ) {
   * `returnif(success);` when return is void to return nothing (instead of having to use `returnifvoid(success);`.
   * `returnif success;` syntax variation.
   * `returnif (success);` syntax variation (i.e. macros require no space between `name` and `(`)
+* `breakif` and `continueif` as language features, with the syntax variations above.
 * Word operators, or implicit functions
   * i.e. `vec4 v = p1 cross p2;` for cross product (instead of `vec4 v = cross(p1, p2);`
 
