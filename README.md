@@ -67,7 +67,7 @@ int main( int argc, char* argv[] ) {
 * Some sort of JSON-ish syntax that allows for hardcoding nested key-value pairs, _without_ having to pre-define a struct or class ahead of time.
   * `auto Player = struct { .name = "Frankie", .age = 65 };`
     * Loosely based on C99/C++20 designated initializers.
-  * `alt::String getName( typeof(Player) thing ) { return alt::String(thing.name); }`
+  * `char* getName( typeof(Player) thing ) { return thing.name; }`
   * `alt::String template<class T> getName( T thing ) { return alt::String(thing.name); }`
   * No commonality between 2 classes with same members, but templated functions can be used to re-use logic.
 * Designated initializers for functions
