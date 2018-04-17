@@ -44,6 +44,11 @@ int main( int argc, char* argv[] ) {
 }
 ```
 
+### Details
+* `alt::print` prints a string
+* `alt::printn` prints a string, and appends a newline to the end of the string
+* `alt::size(val)` typicall invokes the `val.size()` method 
+
 
 ## C++ Language/Compiler Wishlist
 * Some way to set the default string format to UTF-8, without the `u8` string prefix.
