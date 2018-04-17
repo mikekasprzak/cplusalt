@@ -69,7 +69,8 @@ int main( int argc, char* argv[] ) {
   * `alt::String getName( typeof(Player) thing ) { return alt::String(thing.name); }`
   * `alt::String template<class T> getName( T thing ) { return alt::String(thing.name); }`
   * No commonality between 2 classes with same members, but templated functions can be used to re-use logic.
-
+* Designated initializers for functions
+  * See `the ideal way` at the bottom of this article: https://toonormal.com/2018/03/05/notes-vulkan-begins-now/
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
 * Signal operations (smoothstep) as first class members of Math library
