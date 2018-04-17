@@ -52,6 +52,7 @@ int main( int argc, char* argv[] ) {
   * `returnif(success, 1)` returns value of `1` if condition `success` is true.
   * `returnif(success);` when return is void to return nothing (instead of having to use `returnifvoid(success);`.
   * `returnif success;` syntax variation.
+  * `returnif (success);` syntax variation (i.e. macros require no space between `name` and `(`)
 
 ## C+Alt Wishlist
 * SIMD, vector, and matrix math as a first class members of Math library (GLSL syntax)
