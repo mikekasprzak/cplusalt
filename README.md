@@ -6,7 +6,7 @@ STL is old. It was originally designed back in the late 80's and early 90's, bac
 
 Even with all the improvements to the C++ language made by the ISO C++ comittee, when compared to competing languages, in practice C++ with the STL _is not_ a good language for new software.
 
-C+Alt is a reboot. Starting with the C standard library, it throws away the naming scheme and heavy templating of the original 
+C+Alt is a reboot. Starting with the C standard library, it throws away the names, legacy, and heavy templating of the original. That said, templating is still used in C+Alt, but the goal is to provide simpler classes with better every-day defaults.
 
 ## What does C+Alt code look like?
 Work in progress
